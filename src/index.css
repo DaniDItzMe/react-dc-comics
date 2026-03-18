@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+.header-logo {
+  width: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1300px;
+  text-align: center;
+  margin: auto;
+  padding: 20px 0;
+}
+
+header ul li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 10px;
+}
+
+header li a {
+  text-decoration: none;
+  color: darkslategrey;
+  font-weight: bold;
+}
+
+header a.active {
+  color: rgb(52, 52, 224);
+}
