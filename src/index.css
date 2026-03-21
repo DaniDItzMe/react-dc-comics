@@ -22,7 +22,7 @@ header {
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1700px;
   margin: auto;
   padding: 20px 0;
 }
@@ -224,4 +224,8 @@ footer {
 .comics-image {
   width: 175px;
   height: 270px;
+}
+
+.comics-card span {
+  text-transform: uppercase;
 }

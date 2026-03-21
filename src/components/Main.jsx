@@ -1,6 +1,9 @@
-import Comics from "./Comics"
+import ComicsContainer from "./ComicsContainer"
 import MainNavBar from "./MainNavBar"
-export default function Main(){
+export default function Main(props){
+
+    const {comics} = props;
+
     return (
         <main>
             <div className="main-top-bg">
@@ -10,7 +13,7 @@ export default function Main(){
                 
                 <div className="container">
                     <span className="float-label">CURRENT SERIES</span>
-                    <Comics></Comics>
+                    <ComicsContainer comics={comics}></ComicsContainer>
                 </div>
                 
             </div>

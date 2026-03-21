@@ -5,7 +5,7 @@ import PinterestLogo from "../assets/images/footer-pinterest.png"
 import TwitterLogo from "../assets/images/footer-twitter.png"
 import YoutubeLogo from "../assets/images/footer-youtube.png"
 import FooterLinks from "./FooterLinks"
-export default function Footer(){
+export default function Footer(props){
 
     return(
 
@@ -13,7 +13,7 @@ export default function Footer(){
             <div className="footer-links">
                 <img src={DcLogoTransparent} alt="" id="dc-footer-image"/>
                 <div className="container">
-                    <FooterLinks/>
+                    <FooterLinks linkSections={props.linkSections}/>
                 </div>
             </div>
             <div className="footer-end">
