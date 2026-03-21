@@ -66,7 +66,6 @@ main {
 .main-content {
   background-color: rgb(23, 23, 23);
   color: white;
-  padding: 50px 0;
 }
 
 .main-nav {
@@ -98,6 +97,27 @@ main {
   height: 50px;
 }
 
+.main-top-bg {
+  background-image: url("../src/assets/images/jumbotron.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 500px;
+}
+
+.main-content .container {
+  height: 100%;
+  position: relative;
+}
+.float-label {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  background-color: rgb(2, 130, 249);
+  font-weight: bold;
+  font-size: 18pt;
+  padding: 10px 30px;
+}
+
 /* FOOTER */
 footer {
   height: 100%;
@@ -105,6 +125,8 @@ footer {
 
 .footer-links {
   background-image: url("../src/assets/images/footer-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
   position: relative;
   height: 400px;
   overflow: hidden;
@@ -150,7 +172,7 @@ footer {
 
 .footer-end {
   background-color: rgb(48, 48, 48);
-  height: 20vh;
+  height: 10vh;
 }
 
 .footer-end .container {
@@ -181,4 +203,25 @@ footer {
 .contacts ul {
   display: flex;
   gap: 20px;
+}
+
+/* COMICS */
+.comics-container {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.comics-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  flex-basis: calc((100% - 250px) / 6);
+}
+
+.comics-image {
+  width: 175px;
+  height: 270px;
 }
