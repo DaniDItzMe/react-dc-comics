@@ -59,12 +59,14 @@ header a.active::after {
 
 /* MAIN */
 main {
+  /* display: flex;
+  flex-direction: column; */
   flex-grow: 1;
   flex-shrink: 0;
+  background-color: rgb(23, 23, 23);
 }
 
 .main-content {
-  background-color: rgb(23, 23, 23);
   color: white;
 }
 
@@ -116,6 +118,22 @@ main {
   font-weight: bold;
   font-size: 18pt;
   padding: 10px 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-button {
+  background-color: rgb(2, 130, 249);
+  color: white;
+  margin: auto;
+  border: 0;
+  padding: 10px 50px;
+  font-weight: bold;
+  font-size: 13pt;
+  margin-bottom: 40px;
 }
 
 /* FOOTER */

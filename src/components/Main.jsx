@@ -14,8 +14,11 @@ export default function Main(props){
                 <div className="container">
                     <span className="float-label">CURRENT SERIES</span>
                     <ComicsContainer comics={comics}></ComicsContainer>
+                    
                 </div>
-                
+                <div className="button-container">
+                    <button className="load-more-button">LOAD MORE</button>
+                </div>
             </div>
             <MainNavBar/>
         </main>

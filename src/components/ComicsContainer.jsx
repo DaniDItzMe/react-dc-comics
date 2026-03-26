@@ -6,7 +6,7 @@ export default function ComicsContainer (props){
         <div className="comics-container">
             {
                 comics.map(comic => (
-                    <ComicsCard id={comic.id} thumb={comic.thumb} series={comic.series}></ComicsCard>
+                    <ComicsCard key={comic.id} thumb={comic.thumb} series={comic.series}></ComicsCard>
                 ))
             }
         </div>
